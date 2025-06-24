@@ -1,3 +1,5 @@
+//itemController
+
 const Item = require('../models/Item');
 
 // Get one item
@@ -30,15 +32,6 @@ exports.getAllItems = async (req, res) => {
   }
 };
 
-/* Update item
-exports.updateItem = async (req, res) => {
-  try {
-    const updated = await Item.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    res.json(updated);
-  } catch (err) {
-    res.status(400).json({ error: err.message });
-  }
-};*/
 
 // Create a new item in a list
 exports.createItem = async (req, res) => {

@@ -14,7 +14,11 @@ exports.register = async (req, res) => {
     await user.save();
 
     // Generate token
-    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+    const token = jwt.sign(
+  { id: user._id, username: user.username },
+  process.env.JWT_SECRET,
+  { expiresIn: '1h' }
+);
 
     res.status(201).json({ message: 'User registered', token }); // return token here
 
@@ -38,10 +42,10 @@ exports.login = async (req, res) => {
     }
 
     const token = jwt.sign(
-      { userId: user._id },
-      process.env.JWT_SECRET,
-      { expiresIn: '1h' }
-    );
+  { id: user._id, username: user.username },
+  process.env.JWT_SECRET,
+  { expiresIn: '1h' }
+);
 
     res.json({ message: 'Login successful', token });
   } catch (err) {

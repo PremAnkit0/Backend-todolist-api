@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-container,
+.todo-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0 16px 0;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0056b3;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #003d80;
+}
+
+.list-item {
+  background: #e0e0e0;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#logoutBtn {
+  margin-bottom: 20px;
+  background-color: #b30000;
+}
+
+#logoutBtn:hover {
+  background-color: #800000;
+}

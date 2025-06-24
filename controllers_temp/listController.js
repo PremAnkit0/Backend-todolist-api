@@ -1,10 +1,11 @@
+//listController
+
 const List = require('../models/List');
-const Item = require('../models/Item');
 
 // Create list
 exports.createList = async (req, res) => {
   try {
-    const list = await List.create(req.body);
+    const list = await List.create({ ...req.body, userId: req.user.id });
     res.status(201).json(list);
   } catch (err) {
     res.status(400).json({ error: err.message });
@@ -41,3 +42,14 @@ exports.getList = async (req, res) => {
     res.status(400).json({ error: err.message });
   }
 };
+
+// Get all lists
+exports.getAllLists = async (req, res) => {
+  try {
+    const lists = await List.find({ userId: req.user.id });
+    res.json(lists);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
