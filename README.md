@@ -77,8 +77,8 @@ This project started as my **first backend project** during **Practice School (P
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/PremAnkit0/Backend-todolist-api.git
-   cd Backend-todolist-api
+   git clone https://github.com/PremAnkit0/First-todolist-app.git
+   cd First-todolist-app
    ```
 
 2. **Install backend dependencies**
