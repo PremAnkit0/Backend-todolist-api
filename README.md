@@ -162,7 +162,7 @@ The API uses JWT (JSON Web Tokens) for authentication. To access protected endpo
 
 ## 📮 Feedback
 
-Feel free to open an issue or fork this project. As this started as a learning project and has grown into something more comprehensive, suggestions and contributions are most welcome!
+Feel free to open an issue or fork this project. As this started as a learning project and any good advise will help me learn, suggestions and contributions are most welcome!
 
 ---
 
